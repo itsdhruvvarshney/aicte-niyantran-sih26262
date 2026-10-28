@@ -1,0 +1,8 @@
+{
+  "checkpoint_id": 14,
+  "upto_seq_id": 19,
+  "head_hash": "c37f6f6b32dffc3b1b07a6ff8c6aa88f6e9455d1e5b67e7426d363fc8b6d5f59",
+  "hmac_signature": "1288556bd5b96860c642f5c9583164e7f7ac3b3595b865f087c09e67172452a2",
+  "anchored_by": "Prof. S.K.ulkarni (Competent Authority - HQ)",
+  "anchored_at_utc": "2026-10-28T16:40:17.348247+00:00"
+}
