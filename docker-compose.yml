@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: aicte_niyantran_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: aicte_admin
+      POSTGRES_PASSWORD: aicte_secure_password_2026
+      POSTGRES_DB: aicte_niyantran
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U aicte_admin -d aicte_niyantran"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata: 
