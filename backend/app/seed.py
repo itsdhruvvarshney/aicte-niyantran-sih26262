@@ -329,7 +329,7 @@ def seed_initial_data(db: Session) -> dict:
         )
 
     # Undertaking in SUBMITTED state (demonstrating Upload != Verified!)
-    ob_ lease_1048 = Obligation(
+    ob_lease_1048 = Obligation(
         application_id=case_1048.id,
         obligation_type="LEASE_DOCUMENT_VALIDITY",
         stage_code="RENEWED_LEASE_VERIFICATION",
